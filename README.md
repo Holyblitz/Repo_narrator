@@ -25,7 +25,36 @@ It fetches metadata, topics and READMEs from the GitHub API, generates concise b
 ---
 
 ## 🔧 Installation
-```bash
-git clone https://github.com/Holyblitz/repo_narrator.git
+bash
+`git clone https://github.com/Holyblitz/repo_narrator.git
 cd repo_narrator
-pip install -r requirements.txt
+pip install -r requirements.txt`
+
+📖 Usage
+
+Fetch your repos
+bash
+`python fetch_github.py --user <your_github_username> --out out/raw_repos.json`
+
+Generate summaries
+bash
+`python generate_summaries.py --infile out/raw_repos.json --outfile out/summaries.json --model distilgpt2`
+
+Render markdown
+bash
+`python render_portfolio.py --infile out/summaries.json --outfile out/portfolio.md`
+
+Why this project?
+
+This project closes my Data Science Portfolio series:
+
+GANs for logo generation 🎨
+
+T-shirt classifier with Grad-CAM 👕
+
+Repo Narrator (text generation) 📝
+
+Together, they showcase Computer Vision, NLP and ML engineering skills.
+
+Author, Romain
+
