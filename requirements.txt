@@ -1,0 +1,7 @@
+transformers>=4.42.0
+torch
+requests
+tqdm
+rich
+beautifulsoup4
+markdown
